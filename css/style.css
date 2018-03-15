@@ -23,16 +23,7 @@ body{
   font-family: Chalk;
   src: url("../fonts/Chalk-hand-lettering-shaded_DEMO.otf");
 }
-/*ANIMATION*/
-[data-aos="anim1"] {
-  transform: rotate(360deg);
-  opacity: 0;
-  transition-property: transform, opacity;
-  &.aos-animate {
-    transform: rotate(0);
-    opacity: 1;
-  }
-}
+
 
 /*NAVBAR*/
 #navigation li{
@@ -307,7 +298,9 @@ body{
 #actuAll .card-actu {
     margin-bottom: 3vh;
 }
-
+#actuAll {
+  padding: 40px 0;
+}
 #actuAll .btn {
     margin-bottom: 5px;
 }
@@ -418,7 +411,6 @@ body{
 #service {
   padding: 50px;
 }
-
 /*CONTACT*/
 #contact{
   background: #171414;
@@ -543,7 +535,7 @@ body{
 }
 #reservation .btn:hover{
   transition: 0.8s;
-  background:rgba(172, 3, 3, 0.72);!important;
+  background:rgba(172, 3, 3, 0.72)!important;
 }
 #reservation .input-group-text{
   border: inherit !important;

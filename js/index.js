@@ -75,7 +75,7 @@ $(document).ready(function() {
   $(".nav-item").click(function() {
     $("#navbarSupportedContent").removeClass("show");
     const href = $(this).find("a").attr("href");
-    const select = $(`${href}`).position().top;
+    const select = $(`${href}`).position().top - 55;
     $("html, body").animate({ scrollTop: select }, 1500);
     
      
