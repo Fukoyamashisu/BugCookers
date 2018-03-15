@@ -75,4 +75,15 @@ $(document).ready(function() {
   $(".nav-item").click(function() {
     $("#navbarSupportedContent").removeClass("show");
   });
+
+  //au scroll la barre devient fixed-top
+  addEventListener("scroll", function() {
+    scrollValue = pageYOffset;
+    console.log(scrollValue);
+    if (scrollValue === 0) {
+      $("#navigation").removeClass("fixed-top");
+    } else {
+      $("#navigation").addClass("fixed-top");
+    }
+  });
 });
