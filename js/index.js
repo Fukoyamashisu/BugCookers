@@ -1,33 +1,36 @@
-$(document).ready(function(){
-
+$(document).ready(function() {
   //CHECK VALIDATION FORMULAIRE
-  const forms = document.getElementsByClassName('needs-validation');
+  const forms = document.getElementsByClassName("needs-validation");
   const validation = Array.prototype.filter.call(forms, function(form) {
-    form.addEventListener('submit', function(event) {
-      if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-      form.classList.add('was-validated');
-    }, false);
+    form.addEventListener(
+      "submit",
+      function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add("was-validated");
+      },
+      false
+    );
   });
 
   //EVENT ON CLICK
-  $('#contactNav').click(() => {
-    $('#contact').slideToggle();
+  $("#contactNav").click(() => {
+    $("#contact").slideToggle();
   });
 
-  $('#contact .closeContact').click(() => {
-    $('#contact').slideToggle();
+  $("#contact .closeContact").click(() => {
+    $("#contact").slideToggle();
   });
 
-  $('.iconBox').click(() => {
-    $('#reservation').slideToggle();
-  })
+  $(".iconBox").click(() => {
+    $("#reservation").slideToggle();
+  });
 
-  $('.close').click(() => {
-    $('#reservation').slideToggle();
-  })
+  $(".close").click(() => {
+    $("#reservation").slideToggle();
+  });
 
   //MODAL BLOG
   $(".btn-actu").click(function() {
@@ -66,5 +69,10 @@ $(document).ready(function(){
     let titreModal = $(modalActu)
       .find("h4")
       .text(titreActu);
+  });
+
+  //fermeture nav link
+  $(".nav-item").click(function() {
+    $("#navbarSupportedContent").removeClass("show");
   });
 });
