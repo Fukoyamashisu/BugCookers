@@ -74,6 +74,27 @@ $(document).ready(function() {
   //fermeture nav link
   $(".nav-item").click(function() {
     $("#navbarSupportedContent").removeClass("show");
+    const href = $(this).find("a").attr("href");
+    const select = $(`${href}`).position().top;
+    $("html, body").animate({ scrollTop: select }, 1500);
+    
+     
+  });
+  $("#a").click(function() {
+    $(`#menucartes`).addClass("display");
+    $(`#concept`).removeClass("display");
+  });
+  $("#b").click(function() {
+    $(`#menucartes`).removeClass("display");
+    $(`#concept`).addClass("display");
+  });
+  $("#c").click(function() {
+    $(`#gallery`).removeClass("display");
+    $(`#actuAll`).addClass("display");
+  });
+  $("#d").click(function() {
+    $(`#actuAll`).removeClass("display");
+    $(`#gallery`).addClass("display");
   });
 
   //au scroll la barre devient fixed-top
