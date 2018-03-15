@@ -11,6 +11,33 @@ $(document).ready(function(){
       cssEase: "ease",
       fade:true
     });
+    $('.centerx').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      autoplay:true,
+      autoplaySpeed:10000,
+      prevArrow: $('#controlLeft'),
+      nextArrow: $('#controlRight'),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
   //ANIMATE SCROLL INIT
     AOS.init({
       offset: 150,

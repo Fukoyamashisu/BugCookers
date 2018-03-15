@@ -12,26 +12,6 @@ $(document).ready(function(){
     }, false);
   });
 
-  //CAROUSEL GALLERY
-  $(function() {
-  setInterval(function() {
-    $("#lightgallery ul").animate(
-      {
-        marginLeft: "-25vw"
-      },
-      800,
-      function() {
-        $(this)
-          .css({
-            marginLeft: 0
-          })
-          .find("li:last ")
-          .after($(this).find("li:first "));
-        }
-      );
-    }, 3500);
-  });
-
   //EVENT ON CLICK
   $('#contactNav').click(() => {
     $('#contact').slideToggle();
@@ -48,7 +28,7 @@ $(document).ready(function(){
   $('.close').click(() => {
     $('#reservation').slideToggle();
   })
-  
+
   //MODAL BLOG
   $(".btn-actu").click(function() {
     let titreActu = $(this)
