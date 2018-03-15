@@ -9,6 +9,9 @@ body{
 .padDown{
   padding-bottom: 30px;
 }
+.display{
+  display: none;
+}
 .stickyB{
   position: sticky;
   bottom: 0;

@@ -33,22 +33,22 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav nav nav-pills" id="pills-tab"  role="tablist">
         <li class="nav-item">
-          <a class="nav-link" id="concept-tab" data-toggle="pill" href="#conceptNav" role="tab" aria-controls="conceptNav" aria-selected="true">Concept</a>
+          <a class="nav-link" id="a" href="#concept">Concept</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="menu-tab" data-toggle="pill" href="#menuNav" role="tab" aria-controls="menuNav" aria-selected="false">Menu & Carte</a>
+          <a class="nav-link" id="b" href="#menucartes">Menu & Carte</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="gallery-tab" data-toggle="pill" href="#galleryNav" role="tab" aria-controls="galleryNav" aria-selected="true">Galerie</a>
+          <a class="nav-link" id="c" href="#gallery">Galerie</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="actu-tab" data-toggle="pill" href="#actuNav" role="tab" aria-controls="actuNav" aria-selected="false">Blog</a>
+          <a class="nav-link" id="d" href="#actuAll">Blog</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#service">Service</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contactNav">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -169,8 +169,6 @@
       <img src="./pictures/image.jpeg" alt="">
     </div>
   </section>
-  <div class="tab-content">
-    <div id="conceptNav" class="tab-pane fade show active" role="tabpanel" aria-labelledby="concept-tab">
       <!-- CONCEPT -->
       <section id="concept">
         <div class="container-fluid">
@@ -201,10 +199,8 @@
               </div>
           </div>
         </section>
-      </div>
-    <div id="menuNav" class="tab-pane fade" role="tabpanel" aria-labelledby="menu-tab">
     <!-- CARDMENU -->
-      <section id="menucartes">
+      <section id="menucartes" class="display">
           <div class="container-fluid">
               <div class="row justify-content-center">
                   <h2>Menus et Carte</h2>
@@ -247,11 +243,8 @@
               </div>
           </div>
       </section>
-    </div>
 
 
-    <div class="tab-content">
-      <div id="galleryNav" class="tab-pane fade show active" role="tabpanel" aria-labelledby="gallery-tab">
         <!-- ACTUALITE / GALERIE -->
         <section id="actuGallery">
           <div id="gallery" class="container-fluid">
@@ -303,9 +296,8 @@
             </div>
           </div>
         </section>
-      </div>
-      <div id="actuNav" class="tab-pane fade" role="tabpanel" aria-labelledby="actu-tab">
-        <section id="actuAll">
+
+        <section id="actuAll" class="display">
           <h2>Blog</h2>
           <hr></hr>
           <div class="container">
@@ -405,8 +397,7 @@
 
           </div>
         </section>
-      </div>
-    </div>
+
 
 
       <!-- SERVICE -->
