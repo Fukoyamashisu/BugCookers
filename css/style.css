@@ -26,6 +26,7 @@ body{
 
 
 /*NAVBAR*/
+
 #navigation li{
   margin-left: 20px;
   text-align:center;
@@ -53,12 +54,10 @@ body{
   border-color: white;
 }
 #navigation{
-  background:linear-gradient(217deg, rgb(0, 0, 0), #5f686eb6 90.71%);
+  background:linear-gradient(217deg, rgb(0, 0, 0), #5f686eb6);
+  border-bottom: 1px solid white;
 }
-#navigation .fa-home{
-  color: white;
-  font-size: 30px;
-}
+
 /*CONCEPT*/
 @media all and (max-width:650px) {
   #etiquette{
@@ -372,6 +371,11 @@ body{
   cursor: pointer;
 }
 
+#share .fa-instagram{
+  font-size: 25px;
+  cursor: pointer;
+}
+
 #share .iconBox{
   margin: 5px;
   padding: 5px;
@@ -467,82 +471,14 @@ body{
   font-size: 20px;
   font-weight: bold;
 }
-
+.form-group{
+  width: 100%;
+}
 #contact .btn:hover{
   transition: 0.8s;
   background: transparent !important;
   border: 1px solid #D4AF37;
   color: #D4AF37 !important;
-}
-
-/*RESERVATION*/
-#reservation{
-  background:white;
-  display: none;
-  position: sticky;
-  bottom: 48px;
-}
-#reservation .col-md-6{
-    padding: 0 5px;
-}
-#reservation .fa-times{
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-}
-#reservation .fa-times:hover{
-  color: rgba(172, 3, 3, 0.72);
-}
-#reservation .form-control{
-  font-size: 18px;
-  color:rgba(172, 3, 3, 0.72);
-  border: inherit !important;
-  background: transparent ! important;
-  border-radius: inherit;
-  border-bottom: 1px solid rgba(172, 3, 3, 0.72)!important;
-  text-align: center;
-}
-#reservation .form-control:focus{
-  box-shadow:inherit;
-  border-bottom: 1px solid rgba(102, 102, 102, 0.7);
-}
-#reservation label{
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding:5px;
-  background: transparent !important;
-  border-radius: inherit;
-  border-bottom: 1px solid rgba(172, 3, 3, 0.72)!important;
-}
-.marginDown{
-  margin-bottom: 20px;
-}
-#reservation .btn{
-  background:black;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
-#reservation .custom-select{
-  border: inherit !important;
-  background: transparent ! important;
-  border-bottom: 1px solid white !important;
-  border-radius: inherit;
-  border-bottom: 1px solid rgba(172, 3, 3, 0.72)!important;
-  padding-left: 35%;
-  padding-right: 0;
-  height: 40px;
-}
-#reservation .btn:hover{
-  transition: 0.8s;
-  background:rgba(172, 3, 3, 0.72)!important;
-}
-#reservation .input-group-text{
-  border: inherit !important;
-  background: transparent ! important;
-  border-bottom: 1px solid white !important;
-  border-radius: inherit;
-  border-bottom: 1px solid rgba(172, 3, 3, 0.72)!important;
 }
 
 /*FOOTER*/

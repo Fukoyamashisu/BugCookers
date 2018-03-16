@@ -76,9 +76,9 @@ $(document).ready(function() {
     $("#navbarSupportedContent").removeClass("show");
     const href = $(this).find("a").attr("href");
     const select = $(`${href}`).position().top - 55;
-    $("html, body").animate({ scrollTop: select }, 1500);
-    
-     
+    $("html, body").animate({ scrollTop: select }, 1200);
+
+
   });
   $("#a").click(function() {
     $(`#menucartes`).addClass("display");
