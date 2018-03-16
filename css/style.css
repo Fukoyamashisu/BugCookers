@@ -73,6 +73,9 @@ body{
   #concept p:nth-child(2){
     display:none;
   }
+  #reservation{
+    width: 60vw !important;
+  }
 }
 
 #concept{
