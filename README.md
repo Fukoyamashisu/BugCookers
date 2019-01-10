@@ -1,6 +1,6 @@
 # BugCookers
 
-####SchoolProject
+#### SchoolProject
 
 One of my first static web site.
 
